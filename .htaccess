@@ -1,0 +1,36 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Remove trailing slash if it exists
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+    # Redirect /services/customised-orthotics/ to /customised-orthotics
+    #RewriteRule ^services/customised-orthotics/?$ /customised-orthotics [R=301,L]
+
+    # Redirect /services/nutritional-counselling/ to /nutritional-counselling
+    #RewriteRule ^services/nutritional-counselling/?$ /nutritional-counselling [R=301,L]
+
+    # Redirect /services/yoga-service/ to /yoga-service
+    #RewriteRule ^services/yoga-service/?$ /yoga-service [R=301,L]
+
+    # Redirect /services/physiotherapy/ to /physiotherapy
+    #RewriteRule ^services/physiotherapy/?$ /physiotherapy [R=301,L]
+
+    # Redirect /physiotheraphy.html to /physiotherapy.html
+    #RewriteRule ^physiotheraphy\.html$ /physiotherapy.html [R=301,L]
+
+    # Redirect /chiropractic-service.html to /chiropractic.html
+    RewriteRule ^chiropractic-service\.html$ /chiropractic.html [R=301,L]    
+
+    # Rule to remove .html extension
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^(.*)$ $1.html [L]
+
+    # Handle non-existent .shtml files
+    RewriteCond %{REQUEST_URI} \.shtml$
+    RewriteRule ^(.*)$ /404.html [R=301,L]
+</IfModule>

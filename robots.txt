@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.shtml$
+Allow: /
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.atlaschiroindia.com/sitemap.xml

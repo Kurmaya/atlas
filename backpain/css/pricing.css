@@ -1,0 +1,258 @@
+body {
+  background-image: linear-gradient(180deg, #fff, #fff 100px, #fff);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.video-container{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.z-back{
+  z-index: -10;
+  position: relative;
+}
+.top-fix{
+  top:205px;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/** Font Sizing **/
+.ph-no{
+font-size: 24px !important;
+font-weight:500;
+}
+
+.small-text-12{
+  font-size: 12px;
+}
+
+.small-text-14{
+  font-size: 14px;
+}
+
+.distribute-10px{
+  padding-left:10px;
+}
+
+.module-border-wrap {
+  max-width: 180px;
+  position: relative;
+  background: linear-gradient(to right,#ffffff, #cccccc, #444A51);
+  padding: 3px;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.module {
+  background: #fff;
+  padding:10px 2px 2px;
+  border-radius: 6px;
+}
+
+
+/** BG Styles **/
+.bg-1 {
+  background-image:url("../images/bg/1st fold.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.bg-2 {
+  background-image:url("../images/bg/2nd fold.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 200px;
+}
+.bg-3 {
+  background-image:url("../images/bg/3rd fold right.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.bg-4 {
+  background-image:url("../images/bg/4th fold.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.bg-review-1{
+  background-image:url("../images/bg/quotes-top.png");
+  background-position: 80px 0px;
+  background-repeat: no-repeat;
+  background-size: 120px;
+}
+.bg-review-2{
+  background-image:url("../images/bg/quotes-bottom.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  right:80px;
+}
+.bg-faq-1{
+  background-image:url("../images/bg/5th fold.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size:70%;
+}
+.bg-contact-block{
+  background-image:url("../images/bg/6th fold.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.bg-footer-block{
+  background-image:url("../images/bg/7th-fold.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** Content block **/
+.content-block-2a{
+  padding-top:80px;
+  padding-bottom: 20px;
+  max-width:70%;
+  margin: 0px auto;
+}
+
+.content-block-2b{
+  padding-top:80px;
+  padding-bottom: 8 0px;
+  max-width:70%;
+  margin: 0px auto;
+}
+
+.content-block-3{
+  padding-top:0px;
+  padding-bottom: 20px; 
+} 
+.content-block-4, .content-block-5{
+  padding-top:80px;
+  padding-bottom: 20px;
+}
+.content-block-6{
+  padding-top:80px;
+  padding-bottom: 20px;
+}
+.content-block-7{
+  padding-top:80px;
+  padding-bottom: 40px;
+}
+
+.content-block-8{
+  padding-top:180px;
+  padding-bottom: 0px;
+}
+.content-block-9{
+  padding-top:180px;
+  padding-bottom: 110px;
+}
+.percent75-block{
+  margin:18%  auto;
+  width:75%;
+}
+.percent75-block-no-margin{
+  width:75%;
+  margin: 5% auto;
+}
+.percent80-block{
+  margin:5% auto;
+  width:80%;
+}
+.percent80-review-name-block{
+  margin:0 auto;
+  width:80%;
+}
+label.error {
+  font-size: 13px;
+  color: #FF0000;
+}
+.result{
+  font-size: 14px;
+}
+/** desktop specific **/
+@media (min-width: 768px) {
+
+  .ph-no-in-menu{
+    font-size: 24px !important;
+    font-weight:500;
+    }
+  .my-logo{
+      height: 60px;
+      width: auto;
+      padding-left: 1.5rem;
+      }
+
+}
+
+/**Mobile Specific **/
+@media (min-width: 320px) and (max-width:767px){
+  .ph-no-in-menu{
+    font-size: 18px !important;
+    font-weight:500;
+    }
+    .my-logo{
+      height: 60px;
+      width: auto;
+      }
+      .bg-2 {
+        padding-top: 40px;
+        padding-bottom: 100px;
+      }
+      .percent75-block, .percent75-block-no-margin{
+        width:100%;
+      }
+      .content-block-9{
+        padding-top:65px;
+      }
+      .content-block-4{
+        padding-top:0px;
+        padding-bottom: 0px;
+      }
+
+      .content-block-7{
+        padding-top:20px;
+        padding-bottom: 0px;
+      }
+
+      .content-block-8{
+        padding-top:120px;
+        padding-bottom: 0px;
+      }
+	  .content-block-2a{
+  max-width:100%;
+      }
+}
+
+/**Ipad Specific **/
+@media (min-width: 768px) and (max-width:1024px){
+
+.percent75-block{
+  width:95%;
+  margin:5% auto;
+
+}
+
+.z-back img{
+  opacity: 0.6 !important;
+}
+
+}
